@@ -6,18 +6,16 @@
 // TODO: every `type` and `year` is placeholder. Names marked (*) are guesses
 // at the subject — the artwork carries no wordmark to read them off.
 export const PROJECTS = [
-  { file: "public/Step-by-Step Guide_ How to Create the Perfect Treasure Hunt.jpeg", name: "Treasure Hunt", type: "Fun", year: "2026",},
-  { file: "public/Ten Lesser-Known Lost Treasures of the World - Historic Mysteries.jpeg", name: "Treasure Hunt", type: "Fun", year: "2026",},
-  { file: "public/Join other #entrepreneurs this weekend for the chance to get your idea fully #crowdfunded!! #Hackathon.jpeg", name: "Hackathon", type: "Tech", year: "2026",},
-  { file: "public/_.jpeg", name: "Hackathon", type: "Tech", year: "2026",},
-  { file: "public/_ (1).jpeg", name: "Free fire", type: "Esports", year: "2026",},
-  { file: "public/Free fire thumbnail.jpeg", name: "Free Fire", type: "Esports", year: "2026",},
-  { file: "public/Hiromi Higuruma - 4k pc wallpaper.jpeg", name: "CTF Event", type: "Tech", year: "2026",},
-  { file: "public/ctf1.jpeg", name: "CTF EVENT", type:"Tech", year: "2026",},
-  { file: "public/_ (2).jpeg", name: "Workshop", type: "Fun", year: "2026",},
-  { file: "public/_ (2).jpeg", name: "Workshop", type: "Fun", year: "2026",},
-  
-  
+  { file: "Step-by-Step Guide_ How to Create the Perfect Treasure Hunt.jpeg", name: "Treasure Hunt", type: "Fun", year: "2026" },
+  { file: "Ten Lesser-Known Lost Treasures of the World - Historic Mysteries.jpeg", name: "Treasure Hunt", type: "Fun", year: "2026" },
+  { file: "Join other #entrepreneurs this weekend for the chance to get your idea fully #crowdfunded!! #Hackathon.jpeg", name: "Hackathon", type: "Tech", year: "2026" },
+  { file: "_.jpeg", name: "Hackathon", type: "Tech", year: "2026" },
+  { file: "_ (1).jpeg", name: "Free fire", type: "Esports", year: "2026" },
+  { file: "Free fire thumbnail.jpeg", name: "Free Fire", type: "Esports", year: "2026" },
+  { file: "Hiromi Higuruma - 4k pc wallpaper.jpeg", name: "CTF Event", type: "Tech", year: "2026" },
+  { file: "ctf1.jpeg", name: "CTF EVENT", type: "Tech", year: "2026" },
+  { file: "_ (2).jpeg", name: "Workshop", type: "Fun", year: "2026" },
+  { file: "_ (2).jpeg", name: "Workshop", type: "Fun", year: "2026" },
 ];
 
 export const IMAGE_FILES = PROJECTS.map((p) => p.file);
