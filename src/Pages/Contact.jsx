@@ -1,6 +1,7 @@
 import { useRef, useLayoutEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { gsap } from "gsap";
+import Registration from "./Registration";
 import { Clock, MapPin, Mail, Phone, Calendar, ArrowUpRight, Check, Sparkle, Terminal } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
@@ -298,6 +299,7 @@ export default function ScheduleAndContact() {
           </div>
 
         </div>
+        <Registration></Registration>
       </div>
 
     </section>

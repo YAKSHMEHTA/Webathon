@@ -10,6 +10,7 @@ import { InteractiveGlobe } from './Components/InteractiveGlobe'
 import Events from './Pages/Events'
 import Hero from './Components/Hero'
 import SponsorsAndGallery from './Components/SponsorsAndGallery'
+import Registration from './Pages/Registration'
 
 function Home() {
 
@@ -20,6 +21,7 @@ function Home() {
       <ParallaxHeroImagesDemo></ParallaxHeroImagesDemo>
     <SponsorsAndGallery></SponsorsAndGallery>
       <About></About>
+      <Registration></Registration>
     </div>
   )
 }

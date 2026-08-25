@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { GL } from "./gl";
 import { Pill } from "./gl/Pill";
+import { Link } from "react-router-dom";
 import Button from "./gl/Button";
 
 function useCountdown(days = 7) {
@@ -70,7 +71,7 @@ export function Hero() {
           <CountdownBlock value={seconds} label="Sec" />
         </div>
 
-        <a className="contents max-sm:hidden" href="/#contact">
+        <Link className="contents max-sm:hidden" to="/contact">
           <Button
             className="mt-14"
             onMouseEnter={() => setHovering(true)}
@@ -78,8 +79,9 @@ export function Hero() {
           >
             [Contact Us]
           </Button>
-        </a>
-        <a className="contents sm:hidden" href="/#contact">
+        </Link>
+        <a className="contents sm:hidden" href="/contact">
+        
           <Button
             size="sm"
             className="mt-14"
