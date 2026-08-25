@@ -15,7 +15,7 @@ export const PROJECTS = [
   { file: "public/Hiromi Higuruma - 4k pc wallpaper.jpeg", name: "CTF Event", type: "Tech", year: "2026",},
   { file: "public/ctf1.jpeg", name: "CTF EVENT", type:"Tech", year: "2026",},
   { file: "public/_ (2).jpeg", name: "Workshop", type: "Fun", year: "2026",},
-  { file: "", name: "Workshop", type: "Fun", year: "2026",},
+  { file: "public/_ (2).jpeg", name: "Workshop", type: "Fun", year: "2026",},
   
   
 ];

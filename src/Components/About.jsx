@@ -108,7 +108,7 @@ export default function About() {
             {/* Using the Custom Word Reveal Helper */}
             <RevealText 
               text="NIRVAN '26 is Graphic Era Hill University's flagship technical convergence. We don't just host events; we engineer environments where raw ideas collide with relentless execution. For two days, the campus transforms into a high-octane sandbox for developers, designers, and tech enthusiasts to break things, build solutions, and define the future of technology."
-              className="text-2xl sm:text-4xl lg:text-5xl font-sentient font-medium text-neutral-300 leading-[1.1] tracking-tight"
+              className="text-2xl sm:text-4xl lg:text-3xl font-sentient font-medium text-neutral-300 leading-[1.1] tracking-tight"
             />
           </div>
         </div>

@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { slugify } from '../../../lib/utils'
 import * as THREE from "three";
 import gsap from "gsap";
 
@@ -37,6 +39,7 @@ const blankTexture = () => {
 
 export default function Carousel() {
   const containerRef = useRef(null);
+  const navigate = useNavigate();
   const listRef = useRef(null);
   const itemsRef = useRef([]);
   const loaderRef = useRef(null);
@@ -477,6 +480,27 @@ export default function Carousel() {
     // only ever lands on the card the tag was offering.
     const onClick = () => {
       if (!interactive || pointerTravel >= 5 || over < 0) return;
+      // If the tag is up (the "View" label is showing), navigate to the
+      // event detail page for that card instead of just picking it.
+      if (tagUp) {
+        try {
+          const imgOff = Math.round(params.imageOffset);
+          const cellOf = (slot) =>
+            imageCount > 0
+              ? (((imgOff - slot) % imageCount) + imageCount) % imageCount
+              : 0;
+          const sIdx = signedOffset(over);
+          const projectIndex = cellOf(sIdx);
+          const proj = PROJECTS[projectIndex];
+          const name = proj?.name || proj?.type || String(projectIndex);
+          const slug = slugify(name);
+          navigate(`/detail/${encodeURIComponent(slug)}`);
+          return;
+        } catch (err) {
+          // fallback to pick if navigation fails
+          console.warn('navigate failed', err);
+        }
+      }
       pick(over);
     };
 
