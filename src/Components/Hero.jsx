@@ -42,7 +42,7 @@ export function Hero() {
   const { days, hours, minutes, seconds } = useCountdown(7);
 
   return (
-    <section className="flex h-svh flex-col justify-between">
+    <section className="relative min-h-screen flex flex-col justify-between">
       <GL hovering={hovering} />
       <div className="relative  mt-auto pb-16 text-center">
         <Pill className="mb-2 py-7">UNLOCK YOUR <br /> FUTURE GROWTH</Pill>
